@@ -1,0 +1,16 @@
+OASISFormat: 0.3
+Name: pa_include
+Version: 0.1
+Synopsis: Include .mli as module signature.
+Authors: Gregoire Henry
+License: LGPL-2 with OCaml linking exception
+Plugins: META (0.3), DevFiles (0.3)
+BuildTools: ocamlbuild
+OCamlVersion: >= 3.12.1
+
+Library "pa_include"
+  Path: src
+  Modules: Pa_include
+  BuildDepends: camlp4.quotations, camlp4.extend
+  XMETARequires: camlp4
+  XMETAType: syntax

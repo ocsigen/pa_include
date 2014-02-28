@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: ec825cd45d8608379a5e0ee06df7ff67)
+version = "0.1"
+description = "Include .mli as module signature."
+requires = "camlp4"
+archive(syntax, preprocessor) = "pa_include.cma"
+archive(syntax, toploop) = "pa_include.cma"
+archive(syntax, preprocessor, native) = "pa_include.cmxa"
+archive(syntax, preprocessor, native, plugin) = "pa_include.cmxs"
+exists_if = "pa_include.cma"
+# OASIS_STOP
+
